@@ -11,4 +11,4 @@ jobs:
 
     steps:
     - name: horaTerminal
-      run: echo $(date '+%Y-%m-%d %H:%M')
+      run: TZ="America/Sao_Paulo" date '+%Y-%m-%d %H:%M'
