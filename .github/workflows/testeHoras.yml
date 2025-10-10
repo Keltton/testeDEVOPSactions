@@ -1,0 +1,14 @@
+name: Informar a hora atual do Brasil 
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: horaTerminal
+      run: echo $(date '+%Y-%m-%d %H:%M')
